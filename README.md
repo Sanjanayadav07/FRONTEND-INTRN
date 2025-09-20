@@ -19,7 +19,7 @@ Users can browse products, filter by category, view product details in a modal, 
 
 Include a screenshot or GIF of your project:
 
-![Project Screenshot](screenshot.png)
+![Project Screenshot](/images/11000.png)
 
 ---
 
