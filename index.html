@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Product Gallery</h1>
+  </header>
+
+  <!-- Filter Buttons -->
+  <nav class="filter-buttons">
+    <button class="active" onclick="setActiveFilter(this, 'all')">All</button>
+    <button onclick="setActiveFilter(this, 'electronics')">Electronics</button>
+    <button onclick="setActiveFilter(this, 'fashion')">Fashion</button>
+    <button onclick="setActiveFilter(this, 'furniture')">Home</button>
+  </nav>
+
+  <!-- Main Section -->
+  <main>
+    <!-- Product List -->
+    <section id="product-list" class="product-list"></section>
+
+    <!-- Cart -->
+    <aside class="cart">
+      <h3>🛒 Cart</h3>
+      <ul id="cart-items"></ul>
+      <p>Total: ₹<span id="cart-total">0</span></p>
+    </aside>
+  </main>
+
+  <!-- Product Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <img id="modal-image" src="" alt="" width="200" height="200" />
+      <h2 id="modal-title"></h2>
+      <p id="modal-price"></p>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
